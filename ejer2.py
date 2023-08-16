@@ -1,0 +1,7 @@
+numero= int(input("ingrese un numero"))
+numero2=int(input("ingrese el segundo numero"))
+numero3=int(input("ingrese el tercer numero"))
+suma= (numero + numero2 + numero3)
+producto= (numero * numero2 * numero3)
+print ("la suma es", suma)
+print("el producto es", producto)
