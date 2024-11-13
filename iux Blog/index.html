@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#presentacion" onclick="mostrarSeccion('presentacion')">Presentación</a></li>
+                <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="presentacion" class="seccion">
+        <img src="foto_mia.png" alt="Foto de presentación" class="mi-foto">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy Elian Cruz, tengo 22 años, vivo en Argentina, provicnicia de Entre Rios, ciudad Concepción del Uruguay. Estudio licenciatura en sistemas en la universidad de la UADER fcyt y actualmente estoy en 2° año</p>
+
+        
+        <div class="skills-box">
+            <h3>Skills Tecnológicos</h3>
+            <ul id="skills">
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+
+        
+        <div class="proyectos-box">
+            <h3>Proyectos Personales</h3>
+            <div class="proyecto">
+                <h3>No hay ningún proyecto actualmente</h3>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contacto" class="seccion" style="display: none;">
+        <h2>Contacto</h2>
+        <p>No dudes en contactarme a través de las redes sociales o envíame un mensaje</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociales">
+            <a href="https://github.com/exbordC21" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/elian-cruz-494a72335/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/eliancruz2002/" target="_blank">Instagram</a>
+            <a href="https://wa.me/3447577869" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        
+        function mostrarSeccion(seccion) {
+            
+            document.getElementById('presentacion').style.display = 'none';
+            document.getElementById('contacto').style.display = 'none';
+
+            
+            document.getElementById(seccion).style.display = 'block';
+        }
+
+        
+        window.onload = function() {
+            mostrarSeccion('presentacion');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+section {
+    min-height: 76.3vh; 
+    padding: 2em; 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000; 
+    color: #ffffff; 
+    line-height: 1.6;
+    padding: 0 1em;
+}
+
+header {
+    background-color: #1a1a1a; 
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid #6a07b1; 
+}
+
+header h1 {
+    font-size: 2em;
+    color: #b19cd9; 
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #6301a8; 
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+section {
+    padding: 2em;
+    background-color: #1a1a1a; 
+    margin: 2em 0;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #b19cd9; 
+    border-bottom: 2px solid #6301a8;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+.skills-box, .proyectos-box {
+    background-color: #222222;
+    padding: 1.5em;
+    margin: 3em 0 1.5em 0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.skills-box h3, .proyectos-box h3 {
+    font-size: 1.5em;
+    color: #b19cd9; 
+    margin-bottom: 1em;
+}
+
+#skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+#skills li {
+    background-color: #6a0dad; 
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.proyecto {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 4px solid #6a0dad;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #b19cd9;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0.5em;
+    color: #6a0dad; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #ffffff; 
+}
+
+
+form {
+    background-color: #222222;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    color: #b19cd9; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333; 
+    color: #ffffff;
+}
+
+form button {
+    margin-top: 1em;
+    background-color: #6a0dad; 
+    color: #ffffff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b19cd9; 
+}
+
+.mi-foto {
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: 1em 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+section:target {
+    display: block; 
+}
+
+
+section {
+    display: none; 
+}
+
+
+#contacto {
+    display: block;
+}
+
+#presentacion {
+    display: block; 
+}
